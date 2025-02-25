@@ -27,8 +27,8 @@ a {
 
 .container{
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50fr 50fr;
 }
 
 .header{
@@ -36,18 +36,68 @@ a {
     grid-column: auto;
 }
 
+.user-image{
+    align-self: center;
+    justify-self: center;
+}
+
 .about-me{
     grid-row: 2;
     grid-column: 1;
+    grid-column: 1/-1
 }
 
 .project-container{
     grid-row: 3;
     grid-column: 1/-1;
 }
+
+.project-showcase{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.carousel {
+    width: 90vw;
+    display: flex;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* use this property to hide the scrollbar on firefox */
+    scrollbar-width: none;
+ }
+ /*  use this pseudo class to hide the scrollbar on chrome */
+ .carousel::-webkit-scrollbar {
+    display: none;
+ }
+
 .project {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    padding: 1rem;
     background: #1e293b;
     padding: 10px;
     margin: 10px 0;
     border-radius: 8px;
 }
+
+.left,
+.right {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   color: brown;
+   font-size: 5rem;
+   overflow: hidden;
+   z-index: 100;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.user {
+    vertical-align: middle;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+  }

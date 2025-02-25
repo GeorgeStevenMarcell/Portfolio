@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./static/user.jpg">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-
     <div class="container">
         
         <div class="header">
@@ -18,7 +19,9 @@
         </div>
 
         <div class="header">
-            Backend Fullstack Developer
+            <div class="user-image">
+                <img src="./static/user.jpg" alt="Avatar" class="user">
+            </div>
         </div>
 
         <div class="about-me">
@@ -29,25 +32,52 @@
 
         <div class="project-container">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Core Banking API</h3>
-                <p>Built a high-performance API for banking transactions using Spring Boot and PostgreSQL.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Loan Origination System (LOS)</h3>
-                <p>Developed a system to automate loan processing with complex business rules.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>User Identity Management System</h3>
-                <p>Developed a system to automate loan processing with complex business rules.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>User Identity Management System</h3>
-                <p>Developed a system to automate loan processing with complex business rules.</p>
-                <a href="#">View Project</a>
+            <div class="project-showcase">
+                <button class="left" onclick="leftClick()"> < </button>
+                <div class="carousel">
+                    <div class="project">
+                        <h3>Core Banking API</h3>
+                        <p>Built a high-performance API for banking transactions using Spring Boot and PostgreSQL.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>Loan Origination System (LOS)</h3>
+                        <p>Developed a system to automate loan processing with complex business rules.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>User Identity Management System</h3>
+                        <p>Developed a system to automate loan processing with complex business rules.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>User Identity Management System</h3>
+                        <p>Developed a system to automate loan processing with complex business rules.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>Core Banking API</h3>
+                        <p>Built a high-performance API for banking transactions using Spring Boot and PostgreSQL.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>Loan Origination System (LOS)</h3>
+                        <p>Developed a system to automate loan processing with complex business rules.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>User Identity Management System</h3>
+                        <p>Developed a system to automate loan processing with complex business rules.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>User Identity Management System</h3>
+                        <p>Developed a system to automate loan processing with complex business rules.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                
+                <button class="right" onclick="rightClick()"> > </button>
             </div>
         </div>
     </div>
@@ -84,7 +114,7 @@
 </section> -->
 
 <footer>
-    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <p>&copy; 2025 George Steven Marcell. All Rights Reserved.</p>
 </footer>
 
 </body>
