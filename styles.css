@@ -89,12 +89,14 @@ a {
    cursor: pointer;
    color: brown;
    font-size: 5rem;
-   overflow: hidden;
+   /* overflow: hidden; */
    z-index: 100;
-   padding-left: 10px;
-   padding-right: 10px;
+   /* padding-left: 10px;
+   padding-right: 10px; */
 }
-
+.right{
+    padding-right: 60px;
+}
 .user {
     vertical-align: middle;
     width: 190px;
