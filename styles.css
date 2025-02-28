@@ -115,7 +115,7 @@ a {
     object-fit: contain;
 }
 
-.footer-project-img::after {
+/* .footer-project-img::after {
     content: attr(data-tooltip);
     position: absolute;
     bottom: 110%;
@@ -136,7 +136,7 @@ a {
 .footer-project-img:hover::after {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 .left,
 .right {
