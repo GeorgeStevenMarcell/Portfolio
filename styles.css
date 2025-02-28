@@ -102,21 +102,20 @@ a {
     justify-content: space-evenly;
 }
 
-.footer-project img {
-    /* display: inline-block;
-    position: relative; */
-    width: 100%;
+.footer-project-img {
+    display: inline-block;
+    position: relative;
+    width: 40px;
     height: 40px;
-    object-fit: contain;
 }
 
-/* .footer-project-img img {
+.footer-project-img img {
     width: 100%;
     height: 30px;
     object-fit: contain;
-} */
+}
 
-/* .footer-project-img::after {
+.footer-project-img::after {
     content: attr(data-tooltip);
     position: absolute;
     bottom: 110%;
@@ -137,7 +136,7 @@ a {
 .footer-project-img:hover::after {
     opacity: 1;
     visibility: visible;
-} */
+}
 
 .left,
 .right {
