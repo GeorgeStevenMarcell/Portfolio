@@ -77,7 +77,6 @@ a:hover::after {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    padding: 0 60px;
 }
 
 .carousel {
