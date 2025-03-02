@@ -76,6 +76,8 @@ a:hover::after {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+    padding: 0 60px;
 }
 
 .carousel {
@@ -85,6 +87,8 @@ a:hover::after {
     overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    justify-content: space-between;
+    position: relative;
 }
 
 .carousel::-webkit-scrollbar {
@@ -114,6 +118,40 @@ a:hover::after {
 .project-image:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: none;
+    font-size: 14px;
+    z-index: 10;
+    border: 2px solid #d1d5db;
+    outline: none;
+}
+
+.arrow.left {
+    left: -60px;
+}
+
+.arrow.right {
+    right: -60px;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    transform: translateY(-50%) scale(1.1);
 }
 
 .footer-project {
@@ -158,14 +196,34 @@ a:hover::after {
     visibility: visible;
 }
 
-.left,
-.right {
-    border: none;
-    background-color: transparent;
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000; /* Or your preferred color */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    color: brown;
-    font-size: 5rem;
-    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+.carousel .arrow.left {
+    left: -50px; /* Push it outside the grid */
+}
+
+.carousel .arrow.right {
+    right: -50px; /* Push it outside the grid */
+}
+
+.carousel .arrow:hover {
+    background-color: #ff4d4d;
+    transform: translateY(-50%) scale(1.1);
 }
 
 .user {
