@@ -263,12 +263,80 @@ a:hover::after {
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .icon img {
     width: 50px;
     height: 50px;
     object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    top: -35px; /* Move tooltip above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px); /* Slide tooltip up */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: start; /* Align items to the left */
+    align-items: center;
+    gap: 30px; /* Space between each contact item */
+    padding: 10px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    flex: 1 1 auto;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to animate link appearance */
+.contact-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item:hover a {
+    color: #38bdf8;
+    text-decoration: underline;
+    transform: translateX(5px); /* Slide text to the right on hover */
+}
+
+.contact-item:hover .icon {
+    transform: scale(1.2); /* Enlarge the icon slightly */
 }
